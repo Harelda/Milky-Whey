@@ -7,10 +7,8 @@ public class Spawner : MonoBehaviour {
     public float maxSpawnTimer;
     public GameObject[] enemies;
     public float rateDifference;
-    public float[] spawnAmountList;
 
     private float spawnTimer;
-    //private PlayerController player;
 
     private bool useHorizontalEdge;
     private bool usePositiveEdge;
@@ -62,11 +60,8 @@ public class Spawner : MonoBehaviour {
             {
                 enemySelected = 1;
             }
-            
-            for (int i = 0; i < spawnAmountList[enemySelected]; i++)
-            {
-                Instantiate(enemies[enemySelected], posWS + new Vector3(Random.Range(0f, 1.5f), Random.Range(0f, 1.5f), 0), Quaternion.identity);
-            }
+
+            Instantiate(enemies[enemySelected], posWS + new Vector3(Random.Range(0f, 1.5f), Random.Range(0f, 1.5f), 0), Quaternion.identity);
 
             spawnTimer = Random.Range(minSpawnTimer, maxSpawnTimer);
         } else if (spawnTimer > 0f)
