@@ -19,10 +19,12 @@ public class ClickManager : MonoBehaviour {
 			if (hit.collider != null && hit.collider.tag == "ResourcePlanet") {
 				Debug.Log(hit.collider.gameObject.name);
 
-				hit.collider.gameObject.GetComponent<ResourcePlanet> ().OpenUpgradeMenu ();
-				//hit.collider.attachedRigidbody.AddForce(Vector2.up);
-
-
+				ResourcePlanet rp = hit.collider.gameObject.GetComponent<ResourcePlanet> ();
+				if (!rp.upgradeMenuCanvas.gameObject.activeInHierarchy) {
+					rp.OpenUpgradeMenu ();
+				} else {
+					rp.CloseUpgradeMenu ();
+				}
 			}
 
             if (hit.collider != null && hit.collider.tag == "Shield")

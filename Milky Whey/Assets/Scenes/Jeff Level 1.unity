@@ -578,6 +578,8 @@ MonoBehaviour:
   rotationSpeed: 120
   startingRotation: 0
   radius: 1.5
+  shields: []
+  active: 0
 --- !u!212 &347957541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -776,6 +778,8 @@ MonoBehaviour:
   rotationSpeed: 120
   startingRotation: 0
   radius: 1
+  shields: []
+  active: 0
 --- !u!212 &441999415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -898,6 +902,8 @@ MonoBehaviour:
   rotationSpeed: 120
   startingRotation: 0
   radius: 2
+  shields: []
+  active: 0
 --- !u!61 &544443281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2166,8 +2172,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 1159847530444924, guid: 54ea834dcf2428d478d9d319663d24de, type: 2}
   rateDifference: 0
-  spawnAmountList:
-  - 1
 --- !u!114 &1929002819
 MonoBehaviour:
   m_ObjectHideFlags: 0

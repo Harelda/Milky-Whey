@@ -94,4 +94,12 @@ public class ResourcePlanet : MonoBehaviour {
 		shield.SetActive (true);
 		isShieldActivated = true;
 	}
+		
+	void OnTriggerEnter2D(Collider2D coll) {
+		if (coll.gameObject.tag == "Enemy") {
+			isTowerActivated = false;
+			tower.SetActive (false);
+			Destroy (coll.gameObject);
+		}
+	}
 }
