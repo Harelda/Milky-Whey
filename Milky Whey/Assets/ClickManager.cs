@@ -31,11 +31,10 @@ public class ClickManager : MonoBehaviour {
 			Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
 			RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-			if (hit.collider != null) {
-				//Debug.Log(hit.collider.gameObject.name);
-				//hit.collider.attachedRigidbody.AddForce(Vector2.up);
+			if (hit.collider != null && hit.collider.tag == "ResourcePlanet") {
+				
+				hit.collider.gameObject.GetComponent<ResourcePlanet> ().ActivateShieldOnPlanet ();
 
-				Debug.Log ("Activate resource planet shield.");
 			}
 		}
 	}

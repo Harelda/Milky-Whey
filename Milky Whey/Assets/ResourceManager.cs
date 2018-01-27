@@ -31,4 +31,13 @@ public class ResourceManager : MonoBehaviour {
 	{
 		resources [(int)resourceType] += resourceAmount;
 	}
+
+	public bool CostResource(ResourceType resourceType, int resourceAmount)
+	{
+		if (resources [(int)resourceType] - resourceAmount > 0) {
+			resources [(int)resourceType] -= resourceAmount;
+			return true;
+		}
+		return false;
+	}
 }
