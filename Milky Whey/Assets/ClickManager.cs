@@ -24,7 +24,17 @@ public class ClickManager : MonoBehaviour {
 
 
 			}
-		}
+
+            if (hit.collider != null && hit.collider.tag == "Shield")
+            {
+                Debug.Log(hit.collider.gameObject.name);
+
+                hit.collider.gameObject.GetComponent<Shield>().setActiveShield();
+                //hit.collider.attachedRigidbody.AddForce(Vector2.up);
+
+
+            }
+        }
 
 		if (Input.GetMouseButtonDown(1)) {
 			Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
