@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.UI;
 
 public enum ResourceType
 {
@@ -22,11 +23,11 @@ public class ResourcePlanet : MonoBehaviour {
 
 	public string planetName;
 	public Resource resource;
-
+	public Canvas upgradeMenuCanvas;
 
 	// Use this for initialization
 	void Start () {
-		
+		upgradeMenuCanvas.gameObject.SetActive (false);
 	}
 
 
@@ -51,5 +52,20 @@ public class ResourcePlanet : MonoBehaviour {
 	public int GetResourceAmount()
 	{
 		return resource.resourceAmount;
+	}
+
+	public void OpenUpgradeMenu()
+	{
+		upgradeMenuCanvas.gameObject.SetActive (true);
+	}
+
+	public void CloseUpgradeMenu()
+	{
+		upgradeMenuCanvas.gameObject.SetActive (false);
+	}
+
+	public void ActivateTowerOnPlanet()
+	{
+		Debug.Log ("Activate tower on planet.");
 	}
 }
