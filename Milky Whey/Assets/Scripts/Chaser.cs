@@ -5,12 +5,10 @@ using UnityEngine;
 public class Chaser : MonoBehaviour {
     public float lowerMovementSpeed;
     public float upperMovementSpeed;
-    public float hp = 1f;
-    public float damage = 1f;
-    public int pointsGiven = 10;
+    public bool isPlebChaser;
 
     private float movementSpeed;
-    private Transform player;
+    private GameObject lockOn = null;
     private Rigidbody2D rb2d;
     private ParticleSystem particle;
     private bool deathStart;
@@ -26,38 +24,56 @@ public class Chaser : MonoBehaviour {
 
     private void Start()
     {
-        player = GameObject.Find("Home").transform;
+        if (isPlebChaser)
+        {
+
+            lockOn = findClosestActiveResourcePlanet();
+        }
+
+        if (lockOn == null)
+        {
+            lockOn = GameObject.Find("Player Objects");
+        }
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (hp > 0f)
-        {
-            rb2d.MovePosition(Vector3.MoveTowards(transform.position, player.position, movementSpeed * Time.deltaTime));
-        } else if (hp <= 0f && !deathStart)
-        {
-            deathStart = true;
-
-            GetComponent<CircleCollider2D>().enabled = false;
-            GetComponent<SpriteRenderer>().enabled = false;
-
-            particle.Play();
-
-            Destroy(gameObject, 1.5f);
-        }
+        rb2d.MovePosition(Vector3.MoveTowards(transform.position, lockOn.transform.position, movementSpeed * Time.deltaTime));
 	}
 
-    public void takeDamage(float dmg)
+    public GameObject findClosestActiveResourcePlanet()
     {
-        hp -= dmg;
+        GameObject[] planets;
+        GameObject cloesetPlanet = null;
+        Vector3 diff;
+        float curDistance;
+
+        planets = GameObject.FindGameObjectsWithTag("ResourcePlanet");
+        float distance = Mathf.Infinity;
+
+        foreach (GameObject planet in planets)
+        {
+            if (planet.GetComponent<ResourcePlanet>().isTowerActivated)
+            {
+                diff = planet.transform.position - transform.position;
+                curDistance = diff.sqrMagnitude;
+
+                if (curDistance < distance)
+                {
+                    cloesetPlanet = planet;
+                    distance = curDistance;
+                }
+            }
+        }
+
+        return cloesetPlanet;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" || collision.tag == "ResourcePlanet")
         {
-            //collision.gameObject.GetComponent<PlayerController>().takeDamage(damage);
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
 

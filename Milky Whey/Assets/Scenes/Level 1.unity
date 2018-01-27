@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 347957540}
   - component: {fileID: 347957539}
   - component: {fileID: 347957538}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Middle Shield
   m_TagString: Shield
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 441999414}
   - component: {fileID: 441999417}
   - component: {fileID: 441999416}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Inner Shield
   m_TagString: Shield
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 544443280}
   - component: {fileID: 544443282}
   - component: {fileID: 544443281}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Outer Shield
   m_TagString: Shield
   m_Icon: {fileID: 0}
@@ -1794,6 +1794,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114203810129673574, guid: 011cb9e6d42184182a7ccfef6293b840,
+        type: 2}
+      propertyPath: isTowerActivated
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 011cb9e6d42184182a7ccfef6293b840, type: 2}
   m_IsPrefabParent: 0
@@ -1811,6 +1816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929002817}
   - component: {fileID: 1929002818}
+  - component: {fileID: 1929002819}
   - component: {fileID: 1929002821}
   - component: {fileID: 1929002822}
   - component: {fileID: 1929002823}
@@ -1841,7 +1847,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1929002816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4f11920524fd3d4585181dd2f6b62fe, type: 3}
   m_Name: 
@@ -1850,6 +1856,22 @@ MonoBehaviour:
   maxSpawnTimer: 2
   enemies:
   - {fileID: 1159847530444924, guid: 54ea834dcf2428d478d9d319663d24de, type: 2}
+  rateDifference: 0
+--- !u!114 &1929002819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929002816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f11920524fd3d4585181dd2f6b62fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpawnTimer: 2
+  maxSpawnTimer: 3
+  enemies:
+  - {fileID: 1811692360110590, guid: 563f5e99985a7524192d9df582a473a1, type: 2}
   rateDifference: 0
 --- !u!82 &1929002820
 AudioSource:
