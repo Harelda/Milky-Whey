@@ -32,7 +32,7 @@ public class ResourcePlanetFetching : MonoBehaviour {
 
 		//Constantly raycasting to the resource planet;
 		for (int i = 0; i < resourcePlanets[currentLevel-1].resourcePlanet.Length; i++) {
-			RaycastHit2D hit = Physics2D.Raycast (transform.position, resourcePlanets[currentLevel-1].resourcePlanet[i].transform.position);
+			RaycastHit2D hit = Physics2D.Raycast (transform.position, resourcePlanets[currentLevel-1].resourcePlanet[i].transform.position, Mathf.Infinity, 1<<LayerMask.NameToLayer("Resource Planet"));
 			if (hit.collider != null && hit.collider.tag == "ResourcePlanet") {
 				// Fetch resources.
 				//Debug.Log ("Getting resources from " + resourcePlanets[currentLevel-1].resourcePlanet[i].GetComponent<ResourcePlanet>().planetName); 
