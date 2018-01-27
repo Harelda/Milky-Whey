@@ -9,11 +9,6 @@ public class Chaser : MonoBehaviour {
     public float damage = 1f;
     public int pointsGiven = 10;
 
-    public GameObject crate;
-    public float crateSpawnRate;
-
-    public bool isFatty;
-
     private float movementSpeed;
     private Transform player;
     private Rigidbody2D rb2d;
@@ -44,25 +39,10 @@ public class Chaser : MonoBehaviour {
         {
             deathStart = true;
 
-            if (Random.Range(0f, 1f) <= crateSpawnRate)
-            {
-                Instantiate(crate, transform.position, transform.rotation);
-            }
+            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
 
-            if (isFatty)
-            {
-                GetComponent<BoxCollider2D>().enabled = false;
-                GetComponent<SpriteRenderer>().enabled = false;
-
-                particle.Play();
-            }
-            else
-            {
-                GetComponent<CircleCollider2D>().enabled = false;
-                GetComponent<SpriteRenderer>().enabled = false;
-
-                particle.Play();
-            }
+            particle.Play();
 
             Destroy(gameObject, 1.5f);
         }
@@ -71,20 +51,24 @@ public class Chaser : MonoBehaviour {
     public void takeDamage(float dmg)
     {
         hp -= dmg;
-        //GameObject.Find("Game Manager").GetComponent<GameManager>().score += pointsGiven;
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.tag == "Player")
         {
             //collision.gameObject.GetComponent<PlayerController>().takeDamage(damage);
-            Destroy(gameObject);
+            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+
+            particle.Play();
+
+            Destroy(gameObject, 1.5f);
         }
 
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.tag == "Shield")
         {
-            rb2d.angularVelocity = 0f;
+            Destroy(gameObject);
         }
     }
 }
