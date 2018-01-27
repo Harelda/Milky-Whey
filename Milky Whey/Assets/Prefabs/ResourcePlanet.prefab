@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 212009063851045780}
   - component: {fileID: 58389591144915974}
   - component: {fileID: 114203810129673574}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ResourcePlanet
   m_TagString: ResourcePlanet
   m_Icon: {fileID: 0}

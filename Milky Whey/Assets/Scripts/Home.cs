@@ -26,35 +26,40 @@ public class Home : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.W))
+        if (Time.timeScale == 1)
         {
-            shields[activeShield].enabled = false;
-            sprites[activeShield].color = new Color(255, 255, 255);
-            if (activeShield + 1 >= shields.Length)
+            if (Input.GetKeyDown(KeyCode.W))
             {
-                activeShield = 0;
-            } else
-            {
-                activeShield++;
-            }
+                shields[activeShield].enabled = false;
+                sprites[activeShield].color = new Color(255, 255, 255);
+                if (activeShield + 1 >= shields.Length)
+                {
+                    activeShield = 0;
+                }
+                else
+                {
+                    activeShield++;
+                }
 
-            shields[activeShield].enabled = true;
-            sprites[activeShield].color = new Color(255, 255, 0);
-        } else if (Input.GetKeyDown(KeyCode.S))
-        {
-            shields[activeShield].enabled = false;
-            sprites[activeShield].color = new Color(255, 255, 255);
-            if (activeShield - 1 < 0)
-            {
-                activeShield = shields.Length - 1;
+                shields[activeShield].enabled = true;
+                sprites[activeShield].color = new Color(255, 255, 0);
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.S))
             {
-                activeShield--;
-            }
+                shields[activeShield].enabled = false;
+                sprites[activeShield].color = new Color(255, 255, 255);
+                if (activeShield - 1 < 0)
+                {
+                    activeShield = shields.Length - 1;
+                }
+                else
+                {
+                    activeShield--;
+                }
 
-            shields[activeShield].enabled = true;
-            sprites[activeShield].color = new Color(255, 255, 0);
+                shields[activeShield].enabled = true;
+                sprites[activeShield].color = new Color(255, 255, 0);
+            }
         }
 	}
 }
