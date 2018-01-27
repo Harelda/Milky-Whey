@@ -916,16 +916,6 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetA
       objectReference: {fileID: 0}
-    - target: {fileID: 224967334564160154, guid: 011cb9e6d42184182a7ccfef6293b840,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.0013532639
-      objectReference: {fileID: 0}
-    - target: {fileID: 114337243430621196, guid: 011cb9e6d42184182a7ccfef6293b840,
-        type: 2}
-      propertyPath: m_DynamicPixelsPerUnit
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 011cb9e6d42184182a7ccfef6293b840, type: 2}
   m_IsPrefabParent: 0
