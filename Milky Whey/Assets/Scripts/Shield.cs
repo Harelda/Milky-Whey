@@ -12,10 +12,7 @@ public class Shield : MonoBehaviour {
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
-    }
 
-    // Use this for initialization
-    void Start () {
         rb2d.rotation = startingRotation;
         rb2d.position = radius * new Vector3(Mathf.Cos(transform.rotation.eulerAngles.z * Mathf.PI / 180), Mathf.Sin(transform.rotation.eulerAngles.z * Mathf.PI / 180));
     }
