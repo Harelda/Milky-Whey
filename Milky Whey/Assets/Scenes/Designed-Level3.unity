@@ -1513,6 +1513,12 @@ Prefab:
       propertyPath: upgradeCost
       value: 10000
       objectReference: {fileID: 0}
+    - target: {fileID: 212891880106135002, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 87820530da5f24e48ae7461821a48c3b,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
