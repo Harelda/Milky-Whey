@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desgined-Level6.unity
     guid: 1237726bd1e8bb340964cd00cd7e5884
+  - enabled: 1
+    path: Assets/Scenes/Email.unity
+    guid: cb87869f838f59b4e8ba5f9d659699cb
