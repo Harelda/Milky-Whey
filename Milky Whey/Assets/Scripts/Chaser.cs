@@ -15,6 +15,8 @@ public class Chaser : MonoBehaviour {
     private ParticleSystem particle;
     private bool deathStart;
 
+	private AudioSource audioSource;
+
 	// Use this for initialization
 	private void Awake()
     {
@@ -22,6 +24,8 @@ public class Chaser : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         particle = GetComponent<ParticleSystem>();
         deathStart = false;
+
+		audioSource = GetComponent<AudioSource> ();
 	}
 
     private void Start()
@@ -100,6 +104,7 @@ public class Chaser : MonoBehaviour {
             particle.Play();
 
             Destroy(gameObject, 1.5f);
+			audioSource.Play ();
         }
 
 		if (collision.tag == "ResourcePlanet" && collision.gameObject.GetComponent<ResourcePlanet>().isTowerActivated)
@@ -111,6 +116,7 @@ public class Chaser : MonoBehaviour {
             particle.Play();
 
             Destroy(gameObject, 1.5f);
+			audioSource.Play ();
         }
 
         if (collision.tag == "Shield")
@@ -122,6 +128,7 @@ public class Chaser : MonoBehaviour {
 			particle.Play();
 
             Destroy(gameObject, 1.5f);
+			audioSource.Play ();
         }
     }
 }
