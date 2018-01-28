@@ -257,8 +257,8 @@ MonoBehaviour:
   planetName: A
   resource:
     resourceType: 0
-    resourceAmount: 2
-  upgradeCost: 1000
+    resourceAmount: 20
+  upgradeCost: 10000
   repairCost: 0
   tower: {fileID: 1178908958883428}
   shield: {fileID: 1339141706428246}

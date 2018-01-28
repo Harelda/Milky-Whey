@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4f7a5c26da2cf49ad804ee9f3a583a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winningGasNeeded: 35000
+  winningGasNeeded: 100000
   nextLevel: 2
   spawner: {fileID: 114447554099181160}
   plebSpawner: {fileID: 114139805721627514}
