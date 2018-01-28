@@ -832,7 +832,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Milky Way
+  m_Text: Milky Whey
 --- !u!222 &530935322
 CanvasRenderer:
   m_ObjectHideFlags: 0
