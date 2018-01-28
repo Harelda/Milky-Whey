@@ -22,17 +22,37 @@ public class ResourcePlanetFetching : MonoBehaviour {
 
 	public int currentLevel = 1;
 
+	public GameObject unknownPlanet;
 	public int upgradeCost;
 
 	private LayerMask onlyShieldAndResourcePlanet;
 	private List<GameObject> planets;
+	private List<GameObject> unknownPlanets;
+	private int unknownPlanetCounter = 0;
 
 	// Use this for initialization
 	void Start () {
 		onlyShieldAndResourcePlanet = 1 << LayerMask.NameToLayer ("Shield") | 1 << LayerMask.NameToLayer ("Resource Planet");
 		planets = new List<GameObject> ();
+		unknownPlanets = new List<GameObject> ();
+		unknownPlanetCounter = 0;
+		//Loop through all the planets to place unknown planet.
+		planets = new List<GameObject>();
+		for (int i = 0; i < resourcePlanets.Length; i++) {
+			for (int j = 0; j < resourcePlanets [i].resourcePlanet.Length; j++) {
+				resourcePlanets [i].resourcePlanet [j].SetActive (false);
+				GameObject go = (GameObject)Instantiate (unknownPlanet, resourcePlanets [i].resourcePlanet[j].transform.position, resourcePlanets [i].resourcePlanet[j].transform.rotation);
+				if (go != null) {
+					unknownPlanets.Add (go);
+				}
+			}
+		}
+		unknownPlanetCounter = 0;
 		UpgradeSuccess ();
 		upgradeMenuCanvas.gameObject.SetActive (false);
+
+
+
 	}
 	
 	// Update is called once per frame
@@ -49,7 +69,7 @@ public class ResourcePlanetFetching : MonoBehaviour {
 
 				// Add resource to resource manager.
 				ResourcePlanet rp = planets [i].GetComponent<ResourcePlanet> ();
-				if (rp != null && !rp.isShieldActivated) {
+				if (rp != null && !rp.isShieldActivated && rp.isTowerActivated) {
 					// Play Beam animations.
 					planets [i].GetComponent<StormBeam> ().FireWeapon (gameObject.transform.position, rp.gameObject.transform.position);
 
@@ -87,7 +107,9 @@ public class ResourcePlanetFetching : MonoBehaviour {
 	{
 		for (int i = 0; i < resourcePlanets[currentLevel-1].resourcePlanet.Length; i++) {
 			planets.Add (resourcePlanets [currentLevel - 1].resourcePlanet [i]);
+			resourcePlanets [currentLevel - 1].resourcePlanet [i].SetActive (true);
 			resourcePlanets [currentLevel - 1].resourcePlanet [i].GetComponent<ResourcePlanet> ().isDetected = true;
+			unknownPlanets [unknownPlanetCounter++].SetActive (false);
 		}
 	}
 

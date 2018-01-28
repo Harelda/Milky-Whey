@@ -24,8 +24,10 @@ public class ResourcePlanet : MonoBehaviour {
 	public string planetName;
 	public Resource resource;
 	public int upgradeCost;
+	public int repairCost;
 	public GameObject tower;
 	public GameObject shield;
+	public GameObject destroyedTower;
 	public bool isDetected = false;
 	public bool isTowerActivated = false;
 	public bool isShieldActivated = false;
@@ -39,6 +41,7 @@ public class ResourcePlanet : MonoBehaviour {
 	void Start () {
 		upgradeMenuCanvas.gameObject.SetActive (false);
 		tower.SetActive (false);
+		destroyedTower.SetActive (false);
 		shield.SetActive (false);
 	}
 		
@@ -87,6 +90,7 @@ public class ResourcePlanet : MonoBehaviour {
 			Debug.Log ("Activate tower on planet.");
 			isTowerActivated = true;
 			tower.SetActive (true);
+			destroyedTower.SetActive (false);
 		}
 	}
 
@@ -97,12 +101,13 @@ public class ResourcePlanet : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter2D(Collider2D coll) {
-				if (!isDetected) {
+		if (!isDetected) {
 			return;
 		}
-		if (!isShieldActivated && coll.gameObject.tag == "Enemy") {
+		if (!isShieldActivated && coll.gameObject.tag == "Enemy" && isTowerActivated) {
 			isTowerActivated = false;
 			tower.SetActive (false);
+			destroyedTower.SetActive (true);
 		}
 	}
 
