@@ -35,7 +35,7 @@ public class ResourcePlanet : MonoBehaviour {
 	public Canvas upgradeMenuCanvas;
 
 	private float timeCounter = 0.0f;
-	private float shieldTimer = 3.0f;
+	private float shieldTimer = 2.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -97,8 +97,10 @@ public class ResourcePlanet : MonoBehaviour {
 
 	public void ActivateShieldOnPlanet()
 	{
-		shield.SetActive (true);
-		isShieldActivated = true;
+		if (ResourceManager.instance.CostResource (ResourceType.POWER, 5000)) {
+			shield.SetActive (true);
+			isShieldActivated = true;
+		}
 	}
 		
 	void OnTriggerEnter2D(Collider2D coll) {
