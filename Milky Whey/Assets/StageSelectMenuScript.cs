@@ -16,9 +16,9 @@ public class StageSelectMenuScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PlayerPrefs.SetInt ("Level", 4);
+		
 		level = PlayerPrefs.GetInt("Level");
-
+        if (level == 0) level = 1; 
 		for (int i = 0; i < level; i++) {
 			stageButtons [i].gameObject.SetActive (true);
 			stageTexts [i].gameObject.SetActive (true);

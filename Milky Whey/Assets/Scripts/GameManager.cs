@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     public int winningGasNeeded;
+    //public int currentLevel;
     public int nextLevel;
 
     public Spawner spawner;
@@ -28,6 +29,9 @@ public class GameManager : MonoBehaviour {
     private void Awake()
     {
         fade = GetComponent<Fading>();
+
+        PlayerPrefs.SetInt("Level", nextLevel - 1);
+        PlayerPrefs.Save();
     }
 
     // Use this for initialization
@@ -50,7 +54,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (WinningCondition(ResourceManager.instance.resources[0]))
         {
-            StartCoroutine(FadeWait(nextLevel + 1));
+            StartCoroutine(FadeWait(nextLevel + 2));
         }
 
         if (home.hp <= 0)
@@ -72,7 +76,7 @@ public class GameManager : MonoBehaviour {
 
         shield.active = true;
 
-        resourcePlanets.SetActive(false);
+        resourcePlanets.SetActive(true);
     }
 
     public bool WinningCondition(int gas)
