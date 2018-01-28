@@ -20,10 +20,12 @@ public class ClickManager : MonoBehaviour {
 				Debug.Log(hit.collider.gameObject.name);
 
 				ResourcePlanet rp = hit.collider.gameObject.GetComponent<ResourcePlanet> ();
-				if (!rp.upgradeMenuCanvas.gameObject.activeInHierarchy) {
-					rp.OpenUpgradeMenu ();
-				} else {
-					rp.CloseUpgradeMenu ();
+				if (rp.isDetected) {
+					if (!rp.upgradeMenuCanvas.gameObject.activeInHierarchy) {
+						rp.OpenUpgradeMenu ();
+					} else {
+						rp.CloseUpgradeMenu ();
+					}
 				}
 			}
 

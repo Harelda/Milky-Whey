@@ -85,7 +85,7 @@ public class Chaser : MonoBehaviour {
             Destroy(gameObject, 1.5f);
         }
 
-		if (collision.tag == "ResourcePlanet" && collision.gameObject.GetComponent<ResourcePlanet>().isDetected)
+		if (collision.tag == "ResourcePlanet" && collision.gameObject.GetComponent<ResourcePlanet>().isDetected && collision.gameObject.GetComponent<ResourcePlanet>().isTowerActivated)
         {
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
