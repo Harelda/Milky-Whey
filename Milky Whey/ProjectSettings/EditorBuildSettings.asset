@@ -38,3 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Email.unity
     guid: cb87869f838f59b4e8ba5f9d659699cb
+  - enabled: 1
+    path: Assets/Scenes/GameWinning.unity
+    guid: 599ed3e2255ad4c218325082dc3db560
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 460d01f3de56748818b5364099052b4f
