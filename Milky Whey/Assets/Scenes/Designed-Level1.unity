@@ -232,6 +232,11 @@ Prefab:
       propertyPath: resource.resourceAmount
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
   m_IsPrefabParent: 0
@@ -463,6 +468,11 @@ Prefab:
         type: 2}
       propertyPath: upgradeCost
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
@@ -786,6 +796,11 @@ Prefab:
       propertyPath: resource.resourceAmount
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
   m_IsPrefabParent: 0
@@ -846,6 +861,11 @@ Prefab:
         type: 2}
       propertyPath: resource.resourceAmount
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -999,6 +1019,11 @@ Prefab:
         type: 2}
       propertyPath: resource.resourceAmount
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1278,6 +1303,11 @@ Prefab:
       propertyPath: baseMineralGenRate
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114769522679379394, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
@@ -1451,6 +1481,11 @@ Prefab:
         type: 2}
       propertyPath: resource.resourceAmount
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
