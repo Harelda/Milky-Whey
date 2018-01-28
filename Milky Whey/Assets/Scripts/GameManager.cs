@@ -30,8 +30,10 @@ public class GameManager : MonoBehaviour {
     {
         fade = GetComponent<Fading>();
 
-        PlayerPrefs.SetInt("Level", nextLevel - 1);
-        PlayerPrefs.Save();
+		if (PlayerPrefs.GetInt ("Level") < nextLevel) {
+			PlayerPrefs.SetInt ("Level", nextLevel - 1);
+			PlayerPrefs.Save ();
+		}
     }
 
     // Use this for initialization

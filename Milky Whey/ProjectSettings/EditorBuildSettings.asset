@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Email.unity
     guid: cb87869f838f59b4e8ba5f9d659699cb
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 04e92a86e32e042108232fb387bd29ae

@@ -44,7 +44,7 @@ public class tutorialScript : MonoBehaviour {
 			animations [3].SetActive (true);
 			break;
 		case 16:
-			SceneManager.LoadScene (3);
+			SceneManager.LoadScene (10);
 			break;
 		}
 

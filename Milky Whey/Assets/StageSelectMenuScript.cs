@@ -36,6 +36,10 @@ public class StageSelectMenuScript : MonoBehaviour {
 
 	public void LoadLevel(int levelIndex)
 	{
-		SceneManager.LoadScene (levelIndex);
+		if (levelIndex == 3) {
+			SceneManager.LoadScene (9);
+		} else {
+			SceneManager.LoadScene (levelIndex);
+		}
 	}
 }
