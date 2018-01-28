@@ -2,8 +2,10 @@ I'm a robot.
 currently located in planet ACE
 Today is 3018/1/29.
 I'm still looking for more resources.
-Two days ago, I woke up by the e-mail.
-I see spaceships! Is someone coming back?
+Two days ago, 
+I woke up by the e-mail.
+I see spaceships! 
+Is someone coming back?
 Who are they?
 Enemy Ships: We found resources.
 Enemy Ships: ATTACK!
@@ -14,4 +16,4 @@ I want to find them.
 ...
 I need to collect resources to leave.
 ...
-GATHER RESOURCES FROM SURROUNDING PLANETS
+GATHER RESOURCES AND ESCAPE
