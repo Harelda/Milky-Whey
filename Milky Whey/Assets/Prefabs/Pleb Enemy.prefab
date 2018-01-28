@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 199672430825957546}
   m_Layer: 0
   m_Name: Pleb Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,9 +93,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowerMovementSpeed: 3
   upperMovementSpeed: 3
-  hp: 1
-  damage: 1
   isPlebChaser: 1
+  damage: 1
 --- !u!198 &198558069354764462
 ParticleSystem:
   m_ObjectHideFlags: 1
