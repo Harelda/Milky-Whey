@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 114018505647172272}
   - component: {fileID: 50732267425385598}
   - component: {fileID: 58956826364722978}
-  - component: {fileID: 198090562887245300}
-  - component: {fileID: 199809846850134480}
+  - component: {fileID: 199567286941608440}
+  - component: {fileID: 198500385891034732}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -95,14 +95,14 @@ MonoBehaviour:
   upperMovementSpeed: 3
   isPlebChaser: 0
   damage: 1
---- !u!198 &198090562887245300
+--- !u!198 &198500385891034732
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1159847530444924}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 3
   simulationSpeed: 1
   stopAction: 0
   looping: 0
@@ -154,15 +154,15 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
-  randomSeed: 1428812185
+  scalingMode: 2
+  randomSeed: 193212279
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -245,7 +245,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0, a: 1}
+      maxColor: {r: 1, g: 0.51724136, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -551,7 +551,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 30
+    maxNumParticles: 1000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -3456,7 +3456,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199809846850134480
+--- !u!199 &199567286941608440
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -3471,7 +3471,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a70e430f6cccf642816a3994983a529, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

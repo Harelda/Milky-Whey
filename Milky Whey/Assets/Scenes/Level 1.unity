@@ -2588,7 +2588,8 @@ MonoBehaviour:
   maxSpawnTimer: 2
   enemies:
   - {fileID: 1159847530444924, guid: 54ea834dcf2428d478d9d319663d24de, type: 2}
-  rateDifference: 0
+  - {fileID: 1806917116949742, guid: 3c7dcd88bbe1dfb4c831178d9ccda5d8, type: 2}
+  rateDifference: 0.25
 --- !u!114 &1929002819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,7 +2605,8 @@ MonoBehaviour:
   maxSpawnTimer: 3
   enemies:
   - {fileID: 1811692360110590, guid: 563f5e99985a7524192d9df582a473a1, type: 2}
-  rateDifference: 0
+  - {fileID: 1538605242715938, guid: c421db76d4f59ed4fab2fc86a17c704f, type: 2}
+  rateDifference: 0.25
 --- !u!82 &1929002820
 AudioSource:
   m_ObjectHideFlags: 0
