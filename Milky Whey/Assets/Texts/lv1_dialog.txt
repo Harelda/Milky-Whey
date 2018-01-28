@@ -13,7 +13,7 @@ I have to leave.
 There are too many enemies.
 And no one will come back.
 I want to find them.
-...
+(. . .)
 I need to collect resources to leave.
-...
+(. . .)
 GATHER RESOURCES AND ESCAPE
