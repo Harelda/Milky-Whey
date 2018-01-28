@@ -1468,6 +1468,21 @@ Prefab:
       propertyPath: m_Text
       value: 10M
       objectReference: {fileID: 0}
+    - target: {fileID: 114644767912593384, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: baseMineralGenRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644767912593384, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: baseGasGenRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644767912593384, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: basePowerGenRate
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
