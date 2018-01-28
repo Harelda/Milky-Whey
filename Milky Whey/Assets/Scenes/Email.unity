@@ -180,12 +180,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Dear RC-4D57:\r \t\n\nHappy birthday!\r\tOne hundred year passed. How\u2019s
+  m_Text: "Dear RC-4D57:\r \t\n\nHappy birthday!\r One hundred year passed. How\u2019s
     going? We really miss you. \r\t\nThis is a birthday surprise. Although you are
     working for the government, we had sneak this birthday program when we built you.
-    \r\t\nThe life of human is too short. How\u2019s the world looks there? Hope everything
-    going well. Keep working! we are proud of you.\n\n\r\rAttachment: Name Tag ----
-    Milky.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMilky-Whey
+    \r\nAttachment is your birthday gift ---- A new name!\t\nThe life of human is
+    too short. How\u2019s the world looks there? Hope everything going well. Keep
+    working! we are proud of you.\n\n\r\rAttachment: Name Tag ---- Milky.\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMilky-Whey
     Team\n\n"
 --- !u!222 &265527772
 CanvasRenderer:
@@ -407,7 +407,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Milky
+  m_Text: Robot RC-4D57
 --- !u!222 &1174006177
 CanvasRenderer:
   m_ObjectHideFlags: 0
