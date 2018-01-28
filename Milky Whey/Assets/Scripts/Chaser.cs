@@ -6,6 +6,7 @@ public class Chaser : MonoBehaviour {
     public float lowerMovementSpeed;
     public float upperMovementSpeed;
     public bool isPlebChaser;
+    public int damage = 1;
 
     private float movementSpeed;
     private GameObject lockOn = null;
@@ -72,7 +73,19 @@ public class Chaser : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" || collision.tag == "ResourcePlanet")
+        if (collision.tag == "Player")
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+
+            collision.gameObject.GetComponent<Home>().takeDamage(damage);
+
+            particle.Play();
+
+            Destroy(gameObject, 1.5f);
+        }
+
+        if (collision.tag == "ResourcePlanet")
         {
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
