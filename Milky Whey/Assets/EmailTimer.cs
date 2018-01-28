@@ -6,9 +6,20 @@ using UnityEngine.SceneManagement;
 public class EmailTimer : MonoBehaviour {
 
 	private float timer = 0f;
+
+	private Fading fade;
+	bool startLoading = false;
+
+	void Awake()
+	{
+		fade = GameObject.Find("Game Manager").GetComponent<Fading>();
+	}
+
 	// Use this for initialization
 	void Start () {
 		timer = 0f;
+
+
 	}
 	
 	// Update is called once per frame
@@ -19,7 +30,19 @@ public class EmailTimer : MonoBehaviour {
 		timer += Time.deltaTime;
 
 		if (timer >= 10.0f) {
-			SceneManager.LoadScene (3);
+			if (!startLoading) {
+				StartCoroutine (FadeWait (3));
+				startLoading = true;
+			}
 		}
+	}
+
+	IEnumerator FadeWait(int sceneIndex)
+	{
+		float fadeTime = fade.BeginSceneFade(1);
+		fade.BeginAudioFade(1);
+		Time.timeScale = 1;
+		yield return new WaitForSeconds(fadeTime);
+		SceneManager.LoadScene(sceneIndex);
 	}
 }
