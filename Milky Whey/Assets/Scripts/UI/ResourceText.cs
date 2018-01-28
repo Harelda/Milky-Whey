@@ -15,7 +15,7 @@ public class ResourceText : MonoBehaviour {
 	void Update () {
         for (int i = 0; i < resourceTexts.Length; i++)
         {
-            resourceTexts[i].text = ResourceManager.instance.resources[i].ToString();
+            resourceTexts[i].text = (ResourceManager.instance.resources[i] / 350).ToString();
         }
     }
 }

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4803170547144796}
   - component: {fileID: 114447554099181160}
   - component: {fileID: 114139805721627514}
+  - component: {fileID: 114255788294921022}
   - component: {fileID: 114885764172558464}
   - component: {fileID: 114496720111801376}
   - component: {fileID: 114382618736334474}
@@ -56,9 +57,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3cdb7a8b816cd4f18b4f0b243c84a65d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -136,12 +137,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f11920524fd3d4585181dd2f6b62fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTimer: 2
-  maxSpawnTimer: 3
+  minSpawnTimer: 5
+  maxSpawnTimer: 7
   enemies:
   - {fileID: 1811692360110590, guid: 563f5e99985a7524192d9df582a473a1, type: 2}
   - {fileID: 1538605242715938, guid: c421db76d4f59ed4fab2fc86a17c704f, type: 2}
   rateDifference: 0.25
+--- !u!114 &114255788294921022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913177700573696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4f7a5c26da2cf49ad804ee9f3a583a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winningGasNeeded: 35000
+  nextLevel: 2
+  spawner: {fileID: 114447554099181160}
+  plebSpawner: {fileID: 114139805721627514}
+  dialogBox: {fileID: 0}
+  avatarImage: {fileID: 0}
+  clickManager: {fileID: 114382618736334474}
+  resourceFetching: {fileID: 0}
+  resourcePlanets: {fileID: 0}
+  shield: {fileID: 0}
+  home: {fileID: 0}
 --- !u!114 &114382618736334474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,8 +187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f11920524fd3d4585181dd2f6b62fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTimer: 1
-  maxSpawnTimer: 2
+  minSpawnTimer: 3
+  maxSpawnTimer: 4
   enemies:
   - {fileID: 1159847530444924, guid: 54ea834dcf2428d478d9d319663d24de, type: 2}
   - {fileID: 1806917116949742, guid: 3c7dcd88bbe1dfb4c831178d9ccda5d8, type: 2}

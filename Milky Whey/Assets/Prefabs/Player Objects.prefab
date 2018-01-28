@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4311595938110212
 Transform:
   m_ObjectHideFlags: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1.2
+  radius: 2.2
 --- !u!114 &114370615830483756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c859e3391044044fb5534496562aa0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 120
+  rotationSpeed: 280
   startingRotation: 0
   radius: 1.1
   shields:
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c859e3391044044fb5534496562aa0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 120
+  rotationSpeed: 240
   startingRotation: 0
   radius: 0.8
   shields:
@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c859e3391044044fb5534496562aa0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 120
+  rotationSpeed: 200
   startingRotation: 0
   radius: 0.5
   shields:
@@ -770,8 +770,8 @@ MonoBehaviour:
   - resourcePlanet:
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
   - resourcePlanet:
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -810,7 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2.2
+  radius: 4.2
 --- !u!114 &114769522679379394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3.3
+  radius: 6.2
 --- !u!114 &114967523309492896
 MonoBehaviour:
   m_ObjectHideFlags: 1

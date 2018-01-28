@@ -21,7 +21,7 @@ public class LevelRadiusManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		currentLevel = GetComponent<ResourcePlanetFetching> ().currentLevel;
-		for (int i = 0; i < currentLevel; i++) {
+		for (int i = 0; i < currentLevel - 1; i++) {
 			levelRadiuses [i].SetActive (true);
 		}
 	}

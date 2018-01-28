@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class DialogTextBox : MonoBehaviour {
     public TextAsset textFile;
     public float setDelayTimer;
-    public bool startDialog = true;
 
     private Text dialogBox;
     private string[] fileLines;
@@ -14,6 +13,7 @@ public class DialogTextBox : MonoBehaviour {
     private float delayTimer;
     private bool dialogCoroutineStarted = true;
     private Coroutine textTyping;
+    private GameManager gm;
 
     private void Awake()
     {
@@ -23,6 +23,8 @@ public class DialogTextBox : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+
         if (textFile != null)
         {
             fileLines = (textFile.text.Split('\n'));
@@ -35,28 +37,29 @@ public class DialogTextBox : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (startDialog)
+        if (dialogCoroutineStarted)
         {
-            if (!dialogCoroutineStarted && currentLine < fileLines.Length && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
+            if (Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Space) && Time.deltaTime != 0)
             {
-                textTyping = StartCoroutine(TextTyping());
-                dialogCoroutineStarted = true;
-            } else if (dialogCoroutineStarted)
-            {
-                if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
-                {
-                    StopCoroutine(textTyping);
-                    dialogBox.text = fileLines[currentLine];
-                    if (currentLine < fileLines.Length)
-                    {
-                        currentLine++;
-                    }
-                    dialogCoroutineStarted = false;
-                }
+                StopCoroutine(textTyping);
+                dialogBox.text = fileLines[currentLine];
+                dialogCoroutineStarted = false;
+                currentLine++;
             }
         }
-        
-	}
+
+        if ((Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Space)) && !dialogCoroutineStarted && currentLine < fileLines.Length && Time.deltaTime != 0)
+        {
+            textTyping = StartCoroutine(TextTyping());
+            dialogCoroutineStarted = true;
+        }
+         
+
+        if (currentLine >= fileLines.Length)
+        {
+            gm.startLevel();
+        }
+    }
 
     IEnumerator TextTyping()
     {
