@@ -2204,6 +2204,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resources: 000000000000000000000000
+  winGas: 10000
+  winPower: 10000
+  winMineral: 10000
 --- !u!4 &1392212602
 Transform:
   m_ObjectHideFlags: 0
