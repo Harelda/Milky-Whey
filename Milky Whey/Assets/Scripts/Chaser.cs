@@ -9,7 +9,8 @@ public class Chaser : MonoBehaviour {
     public int damage = 1;
 
     private float movementSpeed;
-    private GameObject lockOn = null;
+    public GameObject lockOn = null;
+    public ResourcePlanet lockOnComponent = null;
     private Rigidbody2D rb2d;
     private ParticleSystem particle;
     private bool deathStart;
@@ -29,11 +30,27 @@ public class Chaser : MonoBehaviour {
         {
 
             lockOn = findClosestActiveResourcePlanet();
+            
+            if (lockOn != null)
+            {
+                lockOnComponent = lockOn.GetComponent<ResourcePlanet>();
+            }
         }
 
         if (lockOn == null)
         {
             lockOn = GameObject.Find("Player Objects");
+        }
+    }
+
+    private void Update()
+    {
+        if (lockOn.tag == "ResourcePlanet" && lockOnComponent != null)
+        {
+            if (!lockOnComponent.isTowerActivated)
+            {
+                lockOn = GameObject.Find("Player Objects");
+            }
         }
     }
 
