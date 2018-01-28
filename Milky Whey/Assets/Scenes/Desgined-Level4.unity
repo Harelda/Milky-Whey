@@ -1601,6 +1601,11 @@ Prefab:
       propertyPath: baseGasGenRate
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114644767912593384, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: currentLevel
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
