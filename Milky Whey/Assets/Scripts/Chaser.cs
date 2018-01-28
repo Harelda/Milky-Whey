@@ -115,7 +115,13 @@ public class Chaser : MonoBehaviour {
 
         if (collision.tag == "Shield")
         {
-            Destroy(gameObject);
+			GetComponent<CircleCollider2D>().enabled = false;
+			GetComponent<SpriteRenderer>().enabled = false;
+			deathStart = true;
+
+			particle.Play();
+
+            Destroy(gameObject, 1.5f);
         }
     }
 }
