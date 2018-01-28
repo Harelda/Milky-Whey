@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Home : MonoBehaviour {
     public int hp = 3;
+    public bool won = false;
 
     private HpBar hpUI;
 
     private void Awake()
     {
         hpUI = GameObject.Find("Health Bar").GetComponent<HpBar>();
+        won = false;
     }
 
     // Update is called once per frame
@@ -19,8 +21,11 @@ public class Home : MonoBehaviour {
 
     public void takeDamage(int dmg)
     {
-        hpUI.updateHealth(dmg);
+        if (!won)
+        {
+            hpUI.updateHealth(dmg);
 
-        hp -= dmg;
+            hp -= dmg;
+        }
     }
 }
