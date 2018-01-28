@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Text: 'The Global Game Jam 2018 Sponsers
 
 
-    Thank you for playering!'
+    Thank you for playing!'
 --- !u!222 &332393984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -595,8 +595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68c2d829c5259c46a24eefe7816deda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuSelect: {fileID: 8300000, guid: a8f0f5ebadbe53e4eb430b2d519bcf58, type: 3}
-  menuMove: {fileID: 8300000, guid: 3af01a0dc81cd69469bd83cfa1566ed6, type: 3}
+  menuSelect: {fileID: 8300000, guid: ddfd0f97e12e4df49be72e7b47a18eea, type: 3}
+  menuMove: {fileID: 8300000, guid: 3016935521129b14c81774e7eed517ba, type: 3}
   menuBack: {fileID: 8300000, guid: 77fef8dbc6258ca4d9a36880958b8b71, type: 3}
 --- !u!82 &461120536
 AudioSource:
@@ -607,7 +607,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a8f0f5ebadbe53e4eb430b2d519bcf58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ddfd0f97e12e4df49be72e7b47a18eea, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1013,7 +1013,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3cdb7a8b816cd4f18b4f0b243c84a65d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
