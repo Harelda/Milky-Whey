@@ -161,6 +161,11 @@ Prefab:
       propertyPath: m_Text
       value: 10M
       objectReference: {fileID: 0}
+    - target: {fileID: 114418284316431156, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
   m_IsPrefabParent: 0
@@ -234,7 +239,7 @@ Prefab:
     - target: {fileID: 224313336115419804, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 224313336115419804, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
@@ -636,6 +641,11 @@ Prefab:
       propertyPath: m_Text
       value: 10M
       objectReference: {fileID: 0}
+    - target: {fileID: 114557988209764090, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
   m_IsPrefabParent: 0
@@ -881,6 +891,11 @@ Prefab:
       propertyPath: m_Text
       value: 10M
       objectReference: {fileID: 0}
+    - target: {fileID: 114055294983771514, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
   m_IsPrefabParent: 0
@@ -941,6 +956,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: 10M
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557988209764090, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1124,6 +1144,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: 10M
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557988209764090, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -2092,6 +2117,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: 10M
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055294983771514, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: resource.resourceAmount
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
