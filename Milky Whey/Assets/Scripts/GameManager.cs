@@ -57,12 +57,16 @@ public class GameManager : MonoBehaviour {
         if (WinningCondition(ResourceManager.instance.resources[0]))
         {
             home.won = true;
-            StartCoroutine(FadeWait(nextLevel + 2));
+			if (nextLevel == 0) {
+				StartCoroutine (FadeWait (11));	
+			} else {
+				StartCoroutine (FadeWait (nextLevel + 2));
+			}
         }
 
         if (home.hp <= 0)
         {
-            StartCoroutine(FadeWait(0));
+            StartCoroutine(FadeWait(12));
         }
     }
 
