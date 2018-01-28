@@ -367,26 +367,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1478936154945592, guid: 60d093fb3df494035abfe15cb2db79e0,
     type: 2}
   m_PrefabInternal: {fileID: 166759350}
---- !u!114 &166759352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 166759351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2daae91feb9b4f129f6b29901d20113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beamLineRendererPrefab:
-  - {fileID: 168570, guid: 3827d5026e528924493e36340309f078, type: 2}
-  beamStartPrefab:
-  - {fileID: 179694, guid: cf0bdea0aea918340a7a202187457d8c, type: 2}
-  beamEndPrefab:
-  - {fileID: 146702, guid: 887fc254e5b40474e9591de0ae156bd8, type: 2}
-  beamEndOffset: 1
-  textureScrollSpeed: 1
-  textureLengthScale: 3
 --- !u!4 &166759353 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4070384455020116, guid: 60d093fb3df494035abfe15cb2db79e0,
@@ -1346,26 +1326,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4281602115479700, guid: f54ba65ce688d4fecbe0b31b68406eb6,
     type: 2}
   m_PrefabInternal: {fileID: 309071640}
---- !u!114 &536073043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 536073040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2daae91feb9b4f129f6b29901d20113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beamLineRendererPrefab:
-  - {fileID: 168570, guid: 8fe4893f4372fc84fb0c43a1c8860725, type: 2}
-  beamStartPrefab:
-  - {fileID: 101350, guid: ea72aca1214b2ab4daca57345d563d07, type: 2}
-  beamEndPrefab:
-  - {fileID: 143488, guid: 7ab599370938e1948a5eb2967f1cbd66, type: 2}
-  beamEndOffset: 1
-  textureScrollSpeed: 1
-  textureLengthScale: 3
 --- !u!1 &633555059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3269,26 +3229,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1341019835193262, guid: fc4c2481bdb0b4267bb91ee43c28e963,
     type: 2}
   m_PrefabInternal: {fileID: 191725739}
---- !u!114 &1764238662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1764238661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2daae91feb9b4f129f6b29901d20113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beamLineRendererPrefab:
-  - {fileID: 168570, guid: d22930b63c5f91049b1539535ad958cd, type: 2}
-  beamStartPrefab:
-  - {fileID: 137820, guid: 170db8eff3ea73c41b1a515951f03d70, type: 2}
-  beamEndPrefab:
-  - {fileID: 100050, guid: 325422360e5730141adac507f0c6a393, type: 2}
-  beamEndOffset: 1
-  textureScrollSpeed: 1
-  textureLengthScale: 3
 --- !u!4 &1764238666 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4942901482912092, guid: fc4c2481bdb0b4267bb91ee43c28e963,
