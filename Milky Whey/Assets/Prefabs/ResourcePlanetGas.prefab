@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 212309340060236894}
   - component: {fileID: 58007602869814562}
   - component: {fileID: 114557988209764090}
+  - component: {fileID: 114475329211912026}
   m_Layer: 9
   m_Name: ResourcePlanetGas
   m_TagString: ResourcePlanet
@@ -138,8 +139,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478936154945592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.01, y: -2.59, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children:
   - {fileID: 4511473887406788}
@@ -222,6 +223,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_camera: {fileID: 0}
+--- !u!114 &114475329211912026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478936154945592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2daae91feb9b4f129f6b29901d20113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamLineRendererPrefab:
+  - {fileID: 168570, guid: 3827d5026e528924493e36340309f078, type: 2}
+  beamStartPrefab:
+  - {fileID: 179694, guid: cf0bdea0aea918340a7a202187457d8c, type: 2}
+  beamEndPrefab:
+  - {fileID: 146702, guid: 887fc254e5b40474e9591de0ae156bd8, type: 2}
+  beamEndOffset: 1
+  textureScrollSpeed: 1
+  textureLengthScale: 3
 --- !u!114 &114557988209764090
 MonoBehaviour:
   m_ObjectHideFlags: 1

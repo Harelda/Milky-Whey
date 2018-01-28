@@ -48,12 +48,17 @@ public class ResourcePlanetFetching : MonoBehaviour {
 			if (hit.collider != null && hit.collider.tag == "ResourcePlanet") {
 
 				// Add resource to resource manager.
-				ResourcePlanet rp = planets[i].GetComponent<ResourcePlanet>();
+				ResourcePlanet rp = planets [i].GetComponent<ResourcePlanet> ();
 				if (rp != null && !rp.isShieldActivated) {
-					Debug.DrawRay(transform.position, planets[i].transform.position, Color.green);
+					// Play Beam animations.
+					planets [i].GetComponent<StormBeam> ().FireWeapon (gameObject.transform.position, rp.gameObject.transform.position);
+
+					Debug.DrawRay (transform.position, planets [i].transform.position, Color.green);
 					ResourceManager.instance.AddCertainResource (rp.GetResourceType (), rp.GetResourceAmount ());
+				} else {
+					planets [i].GetComponent<StormBeam> ().DestroyMagicBeam();
 				}
-			}
+			} 
 		}
 	}
 
