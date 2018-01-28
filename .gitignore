@@ -33,7 +33,3 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.anim
-
-*.controller
-
-*.meta
