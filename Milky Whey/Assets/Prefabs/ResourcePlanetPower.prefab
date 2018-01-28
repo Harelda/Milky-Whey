@@ -138,8 +138,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579361565318218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: 1.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 4603174598695682}
@@ -186,9 +186,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.3, y: -0.15}
   serializedVersion: 2
-  m_Radius: 6.36
+  m_Radius: 5.7
 --- !u!114 &114151298281303524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetName: A
   resource:
-    resourceType: 2
+    resourceType: 1
     resourceAmount: 2
   upgradeCost: 1000
   tower: {fileID: 1768210711350044}

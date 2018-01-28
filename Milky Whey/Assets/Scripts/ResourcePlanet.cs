@@ -5,9 +5,9 @@ using UnityEditor.UI;
 
 public enum ResourceType
 {
-	MINERAL=0,
-	GAS,
+	GAS=0,
 	POWER,
+	MINERAL,
 	MAX
 }
 
