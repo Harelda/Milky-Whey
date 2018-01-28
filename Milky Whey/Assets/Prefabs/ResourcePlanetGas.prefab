@@ -155,13 +155,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478936154945592}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.01, y: -2.59, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.174, y: 0.899, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children:
   - {fileID: 4511473887406788}
-  - {fileID: 4967704184093910}
   - {fileID: 4736549665749042}
+  - {fileID: 4967704184093910}
   - {fileID: 224055021673469294}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -190,7 +190,7 @@ Transform:
   m_LocalScale: {x: 4.3698335, y: 4.3698354, z: 4.3698354}
   m_Children: []
   m_Father: {fileID: 4070384455020116}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4967704184093910
 Transform:
@@ -203,7 +203,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4070384455020116}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &58007602869814562
 CircleCollider2D:
@@ -260,7 +260,7 @@ MonoBehaviour:
   - {fileID: 146702, guid: 887fc254e5b40474e9591de0ae156bd8, type: 2}
   beamEndOffset: 1
   textureScrollSpeed: 1
-  textureLengthScale: 3
+  textureLengthScale: -3
 --- !u!114 &114356796053951468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,6 +289,7 @@ MonoBehaviour:
     resourceType: 0
     resourceAmount: 2
   upgradeCost: 1000
+  repairCost: 0
   tower: {fileID: 1178908958883428}
   shield: {fileID: 1339141706428246}
   destroyedTower: {fileID: 1126461295261656}

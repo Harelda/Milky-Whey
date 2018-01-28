@@ -194,8 +194,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341019835193262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.55, y: 2.06, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.81, y: -1.33, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 1}
   m_Children:
   - {fileID: 4362127278071632}
@@ -236,6 +236,7 @@ MonoBehaviour:
     resourceType: 2
     resourceAmount: 2
   upgradeCost: 1000
+  repairCost: 0
   tower: {fileID: 1478175217039002}
   shield: {fileID: 1574299394454014}
   destroyedTower: {fileID: 1818387512756644}
@@ -274,7 +275,7 @@ MonoBehaviour:
   - {fileID: 100050, guid: 325422360e5730141adac507f0c6a393, type: 2}
   beamEndOffset: 1
   textureScrollSpeed: 1
-  textureLengthScale: 3
+  textureLengthScale: -3
 --- !u!114 &114301793406916574
 MonoBehaviour:
   m_ObjectHideFlags: 1
