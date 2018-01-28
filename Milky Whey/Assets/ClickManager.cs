@@ -32,10 +32,20 @@ public class ClickManager : MonoBehaviour {
                 Debug.Log(hit.collider.gameObject.name);
 
                 hit.collider.gameObject.GetComponent<Shield>().setActiveShield();
-                //hit.collider.attachedRigidbody.AddForce(Vector2.up);
 
 
             }
+
+			if (hit.collider != null && hit.collider.tag == "Player") {
+				Debug.Log(hit.collider.gameObject.name);
+
+				ResourcePlanetFetching rpf = hit.collider.gameObject.GetComponent<ResourcePlanetFetching> ();
+				if (!rpf.upgradeMenuCanvas.gameObject.activeInHierarchy) {
+					rpf.OpenUpgradeMenu ();
+				} else {
+					rpf.CloseUpgradeMenu ();
+				}
+			}
         }
 
 		if (Input.GetMouseButtonDown(1)) {
