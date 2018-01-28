@@ -47,6 +47,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1091732436140512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4537521250085158}
+  - component: {fileID: 114916630974187202}
+  m_Layer: 8
+  m_Name: LevelRadius3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1156128824304472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4311595938110212}
+  - component: {fileID: 114666330601115486}
+  m_Layer: 8
+  m_Name: LevelRadius2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1191194958237812
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +132,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1709196465630056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4775898307927682}
+  - component: {fileID: 114235220551339552}
+  m_Layer: 8
+  m_Name: LevelRadius1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1764325115516734
 GameObject:
   m_ObjectHideFlags: 1
@@ -128,6 +176,7 @@ GameObject:
   - component: {fileID: 114519668373788166}
   - component: {fileID: 212891880106135002}
   - component: {fileID: 58709224859987218}
+  - component: {fileID: 114130739463256910}
   m_Layer: 8
   m_Name: Home
   m_TagString: Player
@@ -189,6 +238,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4311595938110212
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156128824304472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4330137972646656}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4330137972646656
 Transform:
   m_ObjectHideFlags: 1
@@ -203,6 +265,9 @@ Transform:
   - {fileID: 4605372864205254}
   - {fileID: 4653886600674166}
   - {fileID: 4728323211629468}
+  - {fileID: 4775898307927682}
+  - {fileID: 4311595938110212}
+  - {fileID: 4537521250085158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -218,6 +283,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4728323211629468}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4537521250085158
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091732436140512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4330137972646656}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4605372864205254
 Transform:
@@ -260,6 +338,19 @@ Transform:
   - {fileID: 4461930655581190}
   m_Father: {fileID: 4330137972646656}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4775898307927682
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709196465630056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4330137972646656}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4851291437441112
 Transform:
@@ -517,6 +608,21 @@ PolygonCollider2D:
       - {x: -0.5219232, y: 2.3908834}
       - {x: 0.003643334, y: 1.0093188}
       - {x: 0.014038682, y: -0.14122136}
+--- !u!114 &114130739463256910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810443341958134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8b9476dd8834c96a360c4359e56bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelRadiuses:
+  - {fileID: 1709196465630056}
+  - {fileID: 1156128824304472}
+  - {fileID: 1091732436140512}
 --- !u!114 &114216118997280188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -550,6 +656,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Upgrade
+--- !u!114 &114235220551339552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709196465630056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1.2
 --- !u!114 &114370615830483756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -722,10 +840,12 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
   upgradeMenuCanvas: {fileID: 223030943724258620}
-  baseMineralGenRate: 0
-  baseGasGenRate: 0
+  baseMineralGenRate: 2
+  baseGasGenRate: 1
   basePowerGenRate: 1
   currentLevel: 1
+  unknownPlanet: {fileID: 1084455495253400, guid: 200eb61d29da44bd68e1e836357ca1ec,
+    type: 2}
   upgradeCost: 0
 --- !u!114 &114658069360474894
 MonoBehaviour:
@@ -743,6 +863,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114666330601115486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156128824304472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 2.2
 --- !u!114 &114769522679379394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -776,6 +908,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Mineral:1000
+--- !u!114 &114916630974187202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091732436140512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d6c020868e942a89d3549ad4153c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3.3
 --- !u!114 &114967523309492896
 MonoBehaviour:
   m_ObjectHideFlags: 1

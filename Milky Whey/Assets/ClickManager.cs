@@ -20,7 +20,7 @@ public class ClickManager : MonoBehaviour {
 				Debug.Log(hit.collider.gameObject.name);
 
 				ResourcePlanet rp = hit.collider.gameObject.GetComponent<ResourcePlanet> ();
-				if (rp.isDetected) {
+				if (rp.isDetected && !rp.isTowerActivated) {
 					if (!rp.upgradeMenuCanvas.gameObject.activeInHierarchy) {
 						rp.OpenUpgradeMenu ();
 					} else {
@@ -42,7 +42,7 @@ public class ClickManager : MonoBehaviour {
 				Debug.Log(hit.collider.gameObject.name);
 
 				ResourcePlanetFetching rpf = hit.collider.gameObject.GetComponent<ResourcePlanetFetching> ();
-				if (!rpf.upgradeMenuCanvas.gameObject.activeInHierarchy) {
+				if (!rpf.upgradeMenuCanvas.gameObject.activeInHierarchy && rpf.currentLevel < rpf.resourcePlanets.Length) {
 					rpf.OpenUpgradeMenu ();
 				} else {
 					rpf.CloseUpgradeMenu ();

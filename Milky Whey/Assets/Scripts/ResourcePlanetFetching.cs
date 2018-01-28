@@ -100,6 +100,7 @@ public class ResourcePlanetFetching : MonoBehaviour {
 		if (ResourceManager.instance.CostResource (ResourceType.MINERAL, 1000)) {
 			currentLevel++;
 			UpgradeSuccess ();
+			upgradeMenuCanvas.gameObject.SetActive (false);
 		}
 	}
 

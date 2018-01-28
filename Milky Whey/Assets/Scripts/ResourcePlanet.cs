@@ -86,11 +86,12 @@ public class ResourcePlanet : MonoBehaviour {
 
 	public void ActivateTowerOnPlanet()
 	{
-		if (ResourceManager.instance.CostResource (resource.resourceType, upgradeCost)) {
+		if (ResourceManager.instance.CostResource (ResourceType.MINERAL, upgradeCost)) {
 			Debug.Log ("Activate tower on planet.");
 			isTowerActivated = true;
 			tower.SetActive (true);
 			destroyedTower.SetActive (false);
+			upgradeMenuCanvas.gameObject.SetActive (false);
 		}
 	}
 
