@@ -14,6 +14,6 @@ public class UICanvasScript : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		transform.LookAt(transform.position + my_camera.transform.rotation * Vector3.forward, my_camera.transform.rotation * Vector3.up);
-		//transform.position = transform.parent.position + new Vector3(0, 1, 0);
+		transform.position = transform.parent.position + new Vector3(0, 1, 0);
 	}
 }
