@@ -10,6 +10,7 @@ public class Chaser : MonoBehaviour {
 
     private float movementSpeed;
     private GameObject lockOn = null;
+    private ResourcePlanet lockOnComponenet = null;
     private Rigidbody2D rb2d;
     private ParticleSystem particle;
     private bool deathStart;
@@ -27,8 +28,12 @@ public class Chaser : MonoBehaviour {
     {
         if (isPlebChaser)
         {
-
             lockOn = findClosestActiveResourcePlanet();
+
+            if (lockOn != null)
+            {
+                lockOnComponenet = lockOn.GetComponent<ResourcePlanet>();
+            }
         }
 
         if (lockOn == null)
@@ -37,10 +42,21 @@ public class Chaser : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+        if (lockOn.tag == "ResourcePlanet" && !lockOnComponenet.isTowerActivated)
+        {
+            lockOn = GameObject.Find("Player Objects");
+        }
+    }
+
     // Update is called once per frame
     private void FixedUpdate()
     {
-        rb2d.MovePosition(Vector3.MoveTowards(transform.position, lockOn.transform.position, movementSpeed * Time.deltaTime));
+        if (!deathStart)
+        {
+            rb2d.MovePosition(Vector3.MoveTowards(transform.position, lockOn.transform.position, movementSpeed * Time.deltaTime));
+        }
 	}
 
     public GameObject findClosestActiveResourcePlanet()
@@ -77,6 +93,7 @@ public class Chaser : MonoBehaviour {
         {
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
+            deathStart = true;
 
             collision.gameObject.GetComponent<Home>().takeDamage(damage);
 
@@ -89,6 +106,7 @@ public class Chaser : MonoBehaviour {
         {
             GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
+            deathStart = true;
 
             particle.Play();
 
