@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetPower 1-2
       objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
   m_IsPrefabParent: 0
@@ -626,6 +631,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetGas 3-1
       objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
   m_IsPrefabParent: 0
@@ -744,6 +754,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetMineral 1-2
       objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
   m_IsPrefabParent: 0
@@ -810,6 +825,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetPower 2-1
       objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
   m_IsPrefabParent: 0
@@ -855,6 +875,11 @@ Prefab:
     - target: {fileID: 1341019835193262, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetMineral 2-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
@@ -912,6 +937,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetGas 3-2
       objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
   m_IsPrefabParent: 0
@@ -957,6 +987,11 @@ Prefab:
     - target: {fileID: 1341019835193262, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetMineral 1-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
@@ -1013,6 +1048,11 @@ Prefab:
     - target: {fileID: 1579361565318218, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetPower 1-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
@@ -1079,6 +1119,11 @@ Prefab:
     - target: {fileID: 1478936154945592, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetGas 2-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1418,6 +1463,11 @@ Prefab:
       propertyPath: rotationSpeed
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114769522679379394, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
@@ -1597,6 +1647,11 @@ Prefab:
     - target: {fileID: 1579361565318218, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetPower 2-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
@@ -1877,6 +1932,96 @@ Prefab:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playMenuMove
       objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 143.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 206.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 143.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 206.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 143.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 206.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0efe668a2d246774b9c8e2d1ee72e94b, type: 2}
   m_IsPrefabParent: 0
@@ -1927,6 +2072,11 @@ Prefab:
     - target: {fileID: 1341019835193262, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetMineral 2-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
