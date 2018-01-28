@@ -58,7 +58,7 @@ public class ResourcePlanetFetching : MonoBehaviour {
 				} else {
 					planets [i].GetComponent<StormBeam> ().DestroyMagicBeam();
 				}
-			} 
+			}
 			if (hit.collider != null && hit.collider.tag == "Shield") {
 				planets [i].GetComponent<StormBeam> ().DestroyMagicBeam();
 			}

@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 212309340060236894}
   - component: {fileID: 58007602869814562}
   - component: {fileID: 114557988209764090}
-  - component: {fileID: 114475329211912026}
+  - component: {fileID: 114331304914755410}
   m_Layer: 9
   m_Name: ResourcePlanetGas
   m_TagString: ResourcePlanet
@@ -211,19 +211,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 3000
---- !u!114 &114356796053951468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1330114846482770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2fbdbf02127498787bc1c1946b41fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  my_camera: {fileID: 0}
---- !u!114 &114475329211912026
+--- !u!114 &114331304914755410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -243,6 +231,18 @@ MonoBehaviour:
   beamEndOffset: 1
   textureScrollSpeed: 1
   textureLengthScale: 3
+--- !u!114 &114356796053951468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330114846482770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2fbdbf02127498787bc1c1946b41fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  my_camera: {fileID: 0}
 --- !u!114 &114557988209764090
 MonoBehaviour:
   m_ObjectHideFlags: 1

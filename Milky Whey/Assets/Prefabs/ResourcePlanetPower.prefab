@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 212215428345445026}
   - component: {fileID: 58782455426395948}
   - component: {fileID: 114418284316431156}
-  - component: {fileID: 114589626247417174}
+  - component: {fileID: 114616527568564486}
   m_Layer: 9
   m_Name: ResourcePlanetPower
   m_TagString: ResourcePlanet
@@ -293,7 +293,7 @@ MonoBehaviour:
   isTowerActivated: 0
   isShieldActivated: 0
   upgradeMenuCanvas: {fileID: 223230374233729234}
---- !u!114 &114589626247417174
+--- !u!114 &114616527568564486
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

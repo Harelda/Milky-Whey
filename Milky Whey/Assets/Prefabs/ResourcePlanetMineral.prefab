@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 212042810789274266}
   - component: {fileID: 58317844629876746}
   - component: {fileID: 114055294983771514}
-  - component: {fileID: 114194235015329400}
+  - component: {fileID: 114229386784286344}
   m_Layer: 9
   m_Name: ResourcePlanetMineral
   m_TagString: ResourcePlanet
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_camera: {fileID: 0}
---- !u!114 &114194235015329400
+--- !u!114 &114229386784286344
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
