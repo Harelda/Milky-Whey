@@ -26,7 +26,6 @@ public class ResourcePlanet : MonoBehaviour {
 	public int upgradeCost;
 	public GameObject tower;
 	public GameObject shield;
-	public bool isDetected = false;
 	public bool isTowerActivated = false;
 	public bool isShieldActivated = false;
 
@@ -97,20 +96,12 @@ public class ResourcePlanet : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (!isDetected) {
-			return;
-		}
 		if (!isShieldActivated && coll.gameObject.tag == "Enemy") {
 			isTowerActivated = false;
 			tower.SetActive (false);
-		}
-	}
-
-	void OnDrawGizmos()
-	{
-		if (isDetected) {
-			Gizmos.color = Color.yellow;
-			Gizmos.DrawWireSphere (transform.position, 1);
+			Destroy (coll.gameObject);
+		} else if(coll.gameObject.tag == "Enemy") {
+			Destroy (coll.gameObject);
 		}
 	}
 }
