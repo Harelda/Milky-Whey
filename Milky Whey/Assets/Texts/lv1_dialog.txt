@@ -1,4 +1,5 @@
 I'm a robot.
+currently located in planet ACE
 Today is 3018/1/29.
 I'm still looking for more resources.
 Two days ago, I woke up.
@@ -6,7 +7,8 @@ I see spaceships! Is someone coming back?
 Who are they?
 Enemy Ships: We found resources.
 Enemy Ships: ATTACK!
-I have to leave. There's too many enemy.
+I have to leave.
+There are too many enemies.
 And no one will come back.
 I want to find them.
 ...
