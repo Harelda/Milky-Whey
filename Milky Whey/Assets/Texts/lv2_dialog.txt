@@ -4,9 +4,9 @@ It shows this planet is called JFU.
 Hope I can get some resources to refuel.
 (Ship decent stage activate)
 (Ship landed)
-...
+(. . .)
 Is that a bird?
 Is that a plane?
 OH, NO !!!
 It's meteoroids !!!
-(collect resources while refueling)
+(Collect resources while refueling)
