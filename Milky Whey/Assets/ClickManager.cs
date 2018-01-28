@@ -54,9 +54,9 @@ public class ClickManager : MonoBehaviour {
 
 			RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 			if (hit.collider != null && hit.collider.tag == "ResourcePlanet") {
-				
-				hit.collider.gameObject.GetComponent<ResourcePlanet> ().ActivateShieldOnPlanet ();
-
+				if (hit.collider.gameObject.GetComponent<ResourcePlanet> ().isTowerActivated) {
+					hit.collider.gameObject.GetComponent<ResourcePlanet> ().ActivateShieldOnPlanet ();
+				}
 			}
 		}
 	}

@@ -16,6 +16,10 @@ public class ResourcePlanetFetching : MonoBehaviour {
 	public ResourcePlanetLevel[] resourcePlanets;
 	public Canvas upgradeMenuCanvas;
 
+	public int baseMineralGenRate;
+	public int baseGasGenRate;
+	public int basePowerGenRate;
+
 	public int currentLevel = 1;
 
 	public int upgradeCost;
@@ -34,8 +38,9 @@ public class ResourcePlanetFetching : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		GenerateAllResources ();
+
 		//Resource Controller
-		Debug.Log(planets.Count);
 
 		//Constantly raycasting to the resource planet;
 		for (int i = 0; i < planets.Count; i++) {
@@ -76,5 +81,12 @@ public class ResourcePlanetFetching : MonoBehaviour {
 			planets.Add (resourcePlanets [currentLevel - 1].resourcePlanet [i]);
 			resourcePlanets [currentLevel - 1].resourcePlanet [i].GetComponent<ResourcePlanet> ().isDetected = true;
 		}
+	}
+
+	public void GenerateAllResources()
+	{
+		ResourceManager.instance.AddCertainResource (ResourceType.MINERAL, baseMineralGenRate);
+		ResourceManager.instance.AddCertainResource (ResourceType.GAS, baseGasGenRate);
+		ResourceManager.instance.AddCertainResource (ResourceType.POWER, basePowerGenRate);
 	}
 }
