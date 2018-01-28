@@ -1408,8 +1408,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591667820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -486.5, y: -156, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 461120534}
   m_RootOrder: 0
@@ -1521,6 +1521,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1857,8 +1858,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923807285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -499.2985, y: -419, z: -10.61695}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -195, y: -184, z: -84}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children:
   - {fileID: 530935320}
   - {fileID: 204600305}
