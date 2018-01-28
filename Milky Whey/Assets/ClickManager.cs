@@ -42,7 +42,7 @@ public class ClickManager : MonoBehaviour {
 				Debug.Log(hit.collider.gameObject.name);
 
 				ResourcePlanetFetching rpf = hit.collider.gameObject.GetComponent<ResourcePlanetFetching> ();
-				if (!rpf.upgradeMenuCanvas.gameObject.activeInHierarchy && rpf.currentLevel < rpf.resourcePlanets.Length) {
+				if (!rpf.upgradeMenuCanvas.gameObject.activeInHierarchy && rpf.currentLevel-1 < rpf.resourcePlanets.Length) {
 					rpf.OpenUpgradeMenu ();
 				} else {
 					rpf.CloseUpgradeMenu ();

@@ -48,7 +48,7 @@ public class ResourcePlanetFetching : MonoBehaviour {
 			}
 		}
 		unknownPlanetCounter = 0;
-		UpgradeSuccess ();
+		//UpgradeSuccess ();
 		upgradeMenuCanvas.gameObject.SetActive (false);
 
 
@@ -98,8 +98,9 @@ public class ResourcePlanetFetching : MonoBehaviour {
 	public void Upgrade()
 	{
 		if (ResourceManager.instance.CostResource (ResourceType.MINERAL, 1000)) {
-			currentLevel++;
+			
 			UpgradeSuccess ();
+			currentLevel++;
 			upgradeMenuCanvas.gameObject.SetActive (false);
 		}
 	}
