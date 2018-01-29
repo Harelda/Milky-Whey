@@ -1361,6 +1361,12 @@ Prefab:
       propertyPath: baseMineralGenRate
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 212891880106135002, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 61dd9d10cbf8eb64c973c92324cc4f7d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0

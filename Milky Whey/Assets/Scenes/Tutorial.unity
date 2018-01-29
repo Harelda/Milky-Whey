@@ -227,6 +227,11 @@ Prefab:
       propertyPath: m_Name
       value: ResourcePlanetGas2
       objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
   m_IsPrefabParent: 0
@@ -540,6 +545,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114928770192566554, guid: fc4c2481bdb0b4267bb91ee43c28e963,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc4c2481bdb0b4267bb91ee43c28e963, type: 2}
   m_IsPrefabParent: 0
@@ -738,22 +748,22 @@ Prefab:
     - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 162.59998
+      value: 143.4
       objectReference: {fileID: 0}
     - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -83.44737
       objectReference: {fileID: 0}
     - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 245.19995
+      value: 206.79999
       objectReference: {fileID: 0}
     - target: {fileID: 224721809991323622, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 86.89474
       objectReference: {fileID: 0}
     - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
@@ -768,22 +778,22 @@ Prefab:
     - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 162.59998
+      value: 143.4
       objectReference: {fileID: 0}
     - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -157.42107
       objectReference: {fileID: 0}
     - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 245.19995
+      value: 206.79999
       objectReference: {fileID: 0}
     - target: {fileID: 224865969052119416, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 41.05263
       objectReference: {fileID: 0}
     - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
@@ -798,22 +808,22 @@ Prefab:
     - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 162.59998
+      value: 143.4
       objectReference: {fileID: 0}
     - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -208.4737
       objectReference: {fileID: 0}
     - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 245.19995
+      value: 206.79999
       objectReference: {fileID: 0}
     - target: {fileID: 224513865876065982, guid: 0efe668a2d246774b9c8e2d1ee72e94b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 41.05263
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0efe668a2d246774b9c8e2d1ee72e94b, type: 2}
@@ -856,6 +866,11 @@ Prefab:
     - target: {fileID: 4281602115479700, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762960507333936, guid: f54ba65ce688d4fecbe0b31b68406eb6,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f54ba65ce688d4fecbe0b31b68406eb6, type: 2}
@@ -912,6 +927,11 @@ Prefab:
     - target: {fileID: 1478936154945592, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetGas4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1044,6 +1064,11 @@ Prefab:
     - target: {fileID: 1478936154945592, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetGas1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1323,6 +1348,12 @@ Prefab:
       propertyPath: baseMineralGenRate
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 212891880106135002, guid: 5d75ddca061b7493dbe08ce672f5b627,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f440f57cadd4454cabb507de2374317,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d75ddca061b7493dbe08ce672f5b627, type: 2}
   m_IsPrefabParent: 0
@@ -1582,6 +1613,11 @@ Prefab:
     - target: {fileID: 1478936154945592, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
       propertyPath: m_Name
       value: ResourcePlanetGas3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697227870895354, guid: 60d093fb3df494035abfe15cb2db79e0,
+        type: 2}
+      propertyPath: m_Text
+      value: 10M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60d093fb3df494035abfe15cb2db79e0, type: 2}
@@ -1874,22 +1910,22 @@ Prefab:
     - target: {fileID: 224675894635095898, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 43.359997
+      value: 38.239998
       objectReference: {fileID: 0}
     - target: {fileID: 224675894635095898, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 224675894635095898, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 86.71999
+      value: 76.479996
       objectReference: {fileID: 0}
     - target: {fileID: 224675894635095898, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16.14
       objectReference: {fileID: 0}
     - target: {fileID: 224849928210687412, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
@@ -1904,22 +1940,22 @@ Prefab:
     - target: {fileID: 224849928210687412, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 130.07999
+      value: 114.71999
       objectReference: {fileID: 0}
     - target: {fileID: 224849928210687412, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 224849928210687412, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 86.71999
+      value: 76.479996
       objectReference: {fileID: 0}
     - target: {fileID: 224849928210687412, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16.14
       objectReference: {fileID: 0}
     - target: {fileID: 224530431252015896, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
@@ -1934,28 +1970,33 @@ Prefab:
     - target: {fileID: 224530431252015896, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 216.79999
+      value: 191.19998
       objectReference: {fileID: 0}
     - target: {fileID: 224530431252015896, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 224530431252015896, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 86.71999
+      value: 76.479996
       objectReference: {fileID: 0}
     - target: {fileID: 224530431252015896, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16.14
       objectReference: {fileID: 0}
     - target: {fileID: 114759500688074014, guid: f0e0944e09e6b874c9c182f7c33c92ff,
         type: 2}
       propertyPath: textFile
       value: 
       objectReference: {fileID: 4900000, guid: ab512709c481241ae8b9062e69238aba, type: 3}
+    - target: {fileID: 114535926913405930, guid: f0e0944e09e6b874c9c182f7c33c92ff,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0e0944e09e6b874c9c182f7c33c92ff, type: 2}
   m_IsPrefabParent: 0
